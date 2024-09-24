@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Administrator Dashboard</title>
+</head>
+<body>
+  <header>
+    <div class="menu-box">
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="login.html">Home</a></li>
+          <li><a href="student.html">Students</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="login.html" id="logout-btn">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Student and Faculty Sections Side by Side -->
+    <div class="content-container">
+      <!-- Student Section -->
+      <section class="content-box">
+        <h2>Manage Students</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Department</th>
+            </tr>
+          </thead>
+          <tbody id="student-list">
+            <!-- Student list will be populated here -->
+          </tbody>
+        </table>
+        <div class="action-buttons">
+          <button id="addS-student-btn" role="button">Add Student</button>
+          <button id="updateS-btn" role="button">Update</button>
+          <button id="deleteS-btn" role="button">Delete</button>
+        </div>
+      </section>
+
+      <!-- Faculty Section -->
+      <section class="content-box">
+        <h2>Manage Faculty</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Department</th>
+            </tr>
+          </thead>
+          <tbody id="faculty-list">
+            <!-- Faculty list will be populated here -->
+          </tbody>
+        </table>
+        <div class="action-buttons">
+          <button id="add-faculty-btn" role="button">Add Faculty</button>
+          <button id="updateF-btn" role="button">Update</button>
+          <button id="deleteF-btn" role="button">Delete</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <!-- Add footer content here -->
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
